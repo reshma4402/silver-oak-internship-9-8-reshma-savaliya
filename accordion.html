@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://code.jquery.com/ui/jquery-ui-git.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+
+    <script type="text/javascript">
+        $(Document).ready(
+
+function() {
+    $("#divid").accordion({
+        event: "mouseover"
+    });
+    var event = $("#divid").accordion("option", "event");
+
+    $("#divid").accordion("option", "event", "mouseover");
+});
+
+    </script>
+
+<body>
+    <p><b>Mouseover on the content panels</b></p>
+    <div id="divid">
+       <h3>youtube audio library</h3>
+       <div>The music in this new YouTube Audio Library can be downloaded, remixed and used for free forever.</div>
+       <h3>Arijit Singh's</h3>
+       <div>Arijit Singh's speckless voice dribbles like honey. 3. With his warm voice Arijit brings in soul and meaning to any kind of song. 4.</div>
+       
+    </div>
+    </body>
+</html>
